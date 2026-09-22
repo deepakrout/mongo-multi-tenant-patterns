@@ -1,0 +1,26 @@
+{
+  "name": "mongo-multi-tenant-patterns",
+  "version": "1.0.0",
+  "description": "Working reference implementations of three multi-tenant MongoDB schema patterns (shared-collection, database-per-tenant, collection-per-tenant), plus a tenant-capacity calculator for Atlas cluster tiers.",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "seed": "node scripts/seed.js",
+    "capacity": "node scripts/tenant-capacity.js"
+  },
+  "keywords": [
+    "mongodb",
+    "multi-tenant",
+    "mongoose",
+    "saas",
+    "schema-design"
+  ],
+  "author": "Deepak Rout",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0",
+    "dotenv": "^16.4.5"
+  }
+}
